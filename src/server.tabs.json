@@ -1,0 +1,68 @@
+{
+  "tabs":[
+    {
+      "id": 1,
+      "title": "1",
+      "form": [{
+        "type":"text",
+        "label":"text"
+      },
+        {
+          "type":"bool",
+          "label":"bool"
+        },
+        {
+          "type":"text-area",
+          "label":"text-area"
+        },
+        {
+          "type":"data",
+          "label":"data"
+        }]
+    },
+    {
+      "id": 2,
+      "title": "2",
+      "form": [{
+        "type":"text",
+        "label":"text"
+      },
+        {
+          "type":"bool",
+          "label":"bool"
+        },
+        {
+          "type":"text-area",
+          "label":"text-area"
+        },
+        {
+          "type":"data",
+          "label":"data"
+        }]
+    },
+    {
+      "id": 3,
+      "title": "3",
+      "form": [{
+        "type":"text",
+        "label":"text"
+      },
+        {
+          "type":"text",
+          "label":"text"
+        },
+        {
+          "type":"bool",
+          "label":"bool"
+        },
+        {
+          "type":"text-area",
+          "label":"text-area"
+        },
+        {
+          "type":"data",
+          "label":"data"
+        }]
+    }
+  ]
+}

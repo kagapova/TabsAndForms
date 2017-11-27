@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+$tabs_color:#00bb9a;
+
+.nav-item {
+  float: left;
+  position: relative;
+  margin-bottom: -2px !important;
+  color: $tabs_color !important;
+  .nav-link.active {
+    background-color: $tabs_color;
+    border-radius: 0;
+    border: inherit;
+    color: white !important;
+  }
+}
+.nav.nav-tabs{
+  border: 1px solid $tabs_color;
+}
+ .nav-item:after {
+  content: "";
+  position: absolute;
+}
+.nav-item:after {  height: 0;
+  width: 0;
+  right: -14.5px;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 15px solid #59324C;
+}
+
+
