@@ -1,20 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
 $tabs_color:#00bb9a;
-
 .nav-item {
 
   position: relative;
   margin-bottom: -2px !important;
   color: $tabs_color !important;
-  background-color: white;
 
   .nav-link {
     padding-left: 60px;
     padding-right: 60px;
     overflow: hidden;
   }
-
 
   .nav-link.active {
     background-color: $tabs_color;
@@ -67,6 +64,7 @@ $tabs_color:#00bb9a;
 .nav-item:first-child .nav-link:before {
   border-left-color: transparent;
 }
+
 .input-group{
   margin: 20px;
 }
