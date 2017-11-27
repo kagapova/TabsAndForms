@@ -5,21 +5,34 @@
 
   </li>
 </ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" [id]="'home' + currentTab.id" role="tabpanel" aria-labelledby="home-tab">
+<div class="tab-content row justify-content-md-center" id="myTabContent" >
+  <div class="tab-pane fade show active col-lg-8 " [id]="'home' + currentTab.id" role="tabpanel" aria-labelledby="home-tab">
     <div *ngFor="let elem of currentTab.form">
-    <div class="input-group" *ngIf="elem['type'] === 'text'">
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group" *ngIf="elem['type'] === 'text'" >
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" [ngStyle]="{'font-size': font+'px'}" required>
     </div>
       <div class="input-group">
-      <span class="input-group-addon" *ngIf="elem['type'] === 'bool'">
-        <input type="radio" aria-label="Radio button for following text input">
+      <span class="input-group-addon" *ngIf="elem['type'] === 'bool'" [ngStyle]="{'font-size': font+'px'}">
+        <input type="radio" aria-label="Radio button for following text input" required>
       </span>
       </div>
       <div class="input-group">
-        <textarea class="form-control form-rounded" rows="3" *ngIf="elem['type'] === 'text-area'"></textarea>
+        <textarea class="form-control form-rounded" rows="3" *ngIf="elem['type'] === 'text-area'" [ngStyle]="{'font-size': font+'px'}" required></textarea>
       </div>
       </div>
+    <div class="input-group">
+    <select class="custom-select"  #fontSelector (change)="font = fontSelector.value" [ngStyle]="{'font-size': font+'px'}" >
+      <option >Open this select menu</option>
+      <option value="10">10px</option>
+      <option value="12">12px</option>
+      <option value="14">14px</option>
+      <option value="16">16px</option>
+    </select>
+    </div>
     </div>
   </div>
+
+
+
+
 

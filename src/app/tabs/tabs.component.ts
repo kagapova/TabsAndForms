@@ -10,7 +10,8 @@ import {Tab} from "../models/tab";
 export class TabsComponent implements OnInit{
 
   public tabs: Tab [];
-  private currentTab: Tab;
+  public currentTab: Tab;
+  font: string;
 
   constructor (private tabsServise: TabsService) {
   }
